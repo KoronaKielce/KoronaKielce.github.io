@@ -2,6 +2,7 @@ body{
     color: white;
     background-color: darkblue;
     margin: 0;
+    text-align:left;
 }
 .nav{
     list-style-type: none;
@@ -13,12 +14,14 @@ body{
 }
 ul.nav li{
     float: left;
+    text-align:left;
 }
 ul.nav li a{
     display:block;
     padding: 8px 16px;
     color: black;
     text-decoration: none;
+    text-align:left;
 }
 ul.nav a:hover{
     background-color: grey;
