@@ -70,4 +70,58 @@ ul.nav li a{
 ul.nav a:hover{
     background-color: grey;
 }
+.grid-itemnew{
+    background-color: gray;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: left;
+    
+
+}
+.mainnew-image{
+    width: 1270px;
+}
+.title{
+    font-size: 20px; text-align: center; font-weight: bold;
+}
+.sidenav1{
+    background-color: darkgray;
+}
+
+
+.navmenu{
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+
+.mainnew-image{
+    grid-column: 1 / span 3;
+    grid-row: 2;
+}
+
+.main1new{
+    grid-column: 1 / span 2;
+    grid-row: 4;    
+}
+
+.main2new{
+    grid-column: 1 / span 2;
+    grid-row:5;
+}
+
+.sidenavnew{
+   
+    grid-column:  3;
+    grid-row: 3 / span auto;
+}
+.supportsection1new{
+    
+    grid-column: 1;
+    grid-row: 3;
+}
+.supportsection2new{
+   
+    grid-column: 2;
+    grid-row: 3;
+}
  
