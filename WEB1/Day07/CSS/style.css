@@ -26,7 +26,7 @@ body{
 
 .main1{
     grid-column: 1 / span 2;
-    grid-row: 4;    
+    grid-row: 3;    
 }
 
 .main2{
@@ -42,16 +42,38 @@ body{
 .supportsection1{
     background-color: rgb(255, 118, 118);
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 4;
 }
 .supportsection2{
     background-color: rgb(255, 118, 118);
     grid-column: 2;
-    grid-row: 3;
+    grid-row: 4;
 }
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 42, 42);
+    font-size: 20px;
+
+    color: white;
+    text-align: center;
+  }
+  .newfooter {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(166, 166, 166, 0.518);
+    font-size: 20px;
+
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
 .nav{
     list-style-type: none;
-    background-color: rgba(166, 166, 166, 0.518);
+    background-color: rgba(120, 120, 120, 0.518);
     margin: 0px;
     padding: 0;  
     overflow: hidden;
