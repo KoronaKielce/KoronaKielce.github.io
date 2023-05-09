@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript fun!</title>
+</head>
+<body id="change">
+    <h1>LEt's learn javascript!</h1>
+    <h2>How do we do onclick events and alerts on an anchor</h2>
+    <a href="https://eastsideprep.org"  target="_blank" onclick="alert('Warning! you are navigating away from my cool page!')">school website</a>
+    <hr>
+    <h2>How do we display and hide text?</h2>
+    <h2>What's my secret identity</h2>
+    <p id="secret"></p>
+    <button onclick="document.getElementById('secret').innerHTML=' Devious Dane'; document.getElementById('secret').style.display='block';">Reveal!</button>
+    <button onclick="document.getElementById('secret').style.display='none'">Hide!</button>
+    <h2>How do we change an image with Javascript?</h2>
+    <img src="images/istockphoto-178578864-612x612.jpg" alt="nature" id="nat1">
+    <button onclick="document.getElementById('nat1').src='images/photo-1621025713003-3af00dc78efa.jpg'; alt='nature'">nat1</button>
+    <button onclick="document.getElementById('nat1').src='images/istockphoto-178578864-612x612.jpg'; alt='mountains'">nat2</button>
+    
+    <h2>How do we change css styles with a button</h2>
+    <p id="alice">Hi. I am Alice</p>
+    <button onclick="document.getElementById('alice').style.color='blue'; document.getElementById('alice').style.fontSize='50px'">Potion Drink Me</button>
+    <button onclick="document.getElementById('alice').style.color='black'; document.getElementById('alice').style.fontSize='16px'">Potion return Me</button>
+    <hr>
+    <h2>How do we return user inpuut with a function</h2>
+    <button onclick="askName()">What's your name?</button>
+    <p id="ask-name"></p>
+    <h2>Change background color</h2>
+    <button onclick="document.getElementById('change').style.backgroundColor='red';">press me</button>
+    <button onclick="document.getElementById('change').style.backgroundColor='white';">return</button>
+   
+    <button style="font-family:  Arial, Helvetica, sans-serif" id="this" onclick="document.getElementById('this').style.fontFamily='Amatic SC';">Change my fontfamily!</button>
+    <button onclick="document.getElementById('this').style.fontFamily='Arial';">Change back </button>
+    <script>
+        
+            function askName(){
+                let nameParagraph = document.getElementById("ask-name");
+                let name = prompt("what is your name?");
+                // now lets decide what to do
+                if(name=== "dane"){
+                    nameParagraph.innerHTML = "Welcome to the DaneCave, sir.";
+                }
+                else{
+                    nameParagraph.innerHTML = "Hello " + name+"!Nice to meet you";
+                }
+            }
+        
+    </script>
+</body>
+</html>
