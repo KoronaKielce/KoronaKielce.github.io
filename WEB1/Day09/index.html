@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz and two truths and a lie</title>
+</head>
+<body>
+    <h1>Welcome to my quick two truths and a lie game!</h1>
+    <h2>Who are you?</h2>
+    <form action="" id="name-form">
+        <label for="fname">First Name:</label><br>
+        <input type="text" name="fname" id="fname"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" name="lname" id="lname"><br>
+        <label for="age">Age:</label><br>
+        <input type="text" name="age" id="age"><br>
+        <label for="w"> !Very Important! Ojterwise big scary Virus! Week: </label><br>
+        <input type="week" id="w" name="week">
+    </form>
+    <br>
+    <input type="button" value="SUBMIT" onclick="greet()">
+    <p id="greet">Welcome!</p>
+
+    <hr>
+    <h2>What's the only food that can't go bad?</h2>
+    <form action="">
+        <input type="radio" name="trivia1" id="chocolate">
+        <label for="chocolate">Dark Chocolate</label><br>
+        <input type="radio" name="trivia1" id="tuna">
+        <label for="tuna">Canned Tuna</label><br>
+        <input type="radio" name="trivia1" id="honey">
+        <label for="honey"></label>honey
+    </form>
+    <p id="trivia-answer"></p>
+    <br>
+    <input type="button" value="SUBMIT" onclick="trivia1()">
+    <hr>
+    <h2>What's my favorite sport?</h2>
+    <form action="">
+        <input type="radio" name="trivia2" id="Cross-Country">
+        <label for="Cross-Country">Cross Country</label><br>
+        <input type="radio" name="trivia2" id="European-football">
+        <label for="European-football">European Football</label><br>
+        <input type="radio" name="trivia2" id="American-Football">
+        <label for="American-Football">American-Football</label>
+        
+    </form>
+    <p id="trivia-answer2"></p>
+    <br>
+    <input type="button" value="SUBMIT" onclick="trivia2()">
+    <h2>Which two, are truths?</h2>
+    <form action="">
+        <input type="checkbox" name="trivia3" id="dog">
+        <label for="dog">My dog likes to run away</label><br>
+        <input type="checkbox" name="trivia3" id="plane">
+        <label for="plane">I've never been on a plane</label><br>
+        <input type="checkbox" name="trivia3" id="tomato">
+        <label for="tomato">I've never voluntarily eaten tomatos</label>
+    </form>
+    <p id="trivia-answer3"></p>
+    <br>
+    <input type="button" value="SUBMIT" onclick="trivia3()">
+    <script  src="js/game.js">
+       
+    </script>
+</body>
+</html>
